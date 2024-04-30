@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class paineladminController extends Controller
 {
-    //
+    public function painelPage()
+    {
+        return view('admin.painel');
+    }
 }
