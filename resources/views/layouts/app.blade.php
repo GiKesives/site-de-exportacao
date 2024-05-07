@@ -12,7 +12,8 @@
     @yield('css')
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  {{-- MENU --}}
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="{{ route('home') }}">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,10 @@
           @yield('home')
         </div>
         </nav>
-        @yield('body')
+       
+    <div class="container-fluid">
+      @yield('body')
+    </div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     

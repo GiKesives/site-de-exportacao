@@ -14,3 +14,4 @@ Route::get('/painel', [paineladminController::class, 'painelPage'])->name('paine
 
 Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
+Route::post('/contato', [ContatoController::class, 'enviarFormulario'])->name('contato.submit');
