@@ -13,4 +13,17 @@ class ContatoController extends Controller
     {
         return view('app.contato');
     }
+
+    public function enviarFormulario(Request $request)
+    {
+        //return view('app.contato');
+        dd($request->all());
+
+        Contato::create([
+            //nome da coluna no banco => nome do campo do formulário
+            'nome' => $request->name,
+            'email' => $request->email,
+            'mensagem' => $request->message,
+        ]);
+    } 
 }
