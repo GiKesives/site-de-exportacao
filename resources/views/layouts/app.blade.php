@@ -12,13 +12,8 @@
     @yield('css')
 </head>
 <body>
-<<<<<<< HEAD
   {{-- MENU --}}
     <nav class="navbar navbar-expand-lg bg-primary">
-=======
-    {{-- MENU --}}
-    <nav class="navbar navbar-expand-lg bg-secondary">
->>>>>>> 38b8036b3d3d2539aa75d83aad68dedfda8d15d0
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Site de Exportação</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +22,19 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{ route('produto') }}">Produtos</a>
               <a class="nav-link active" aria-current="page" href="{{ route('sobre-nos') }}">Sobre nós</a>
               <a class="nav-link active" aria-current="page" href="{{ route('contato') }}">Contato</a>
-              <a class="nav-link active" aria-current="page" href="{{ route('painel') }}">Painel admin</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Painel Admin
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{{ route('cadastro.submit')}}">Cadastrar Produtos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Editar Produtos</a></li>
+                </ul>
+              </li>
             </div>
           </div>
           @yield('contato')
@@ -37,29 +42,12 @@
           @yield('home')
         </div>
         </nav>
-<<<<<<< HEAD
        
     <div class="container-fluid">
       @yield('body')
     </div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-=======
-  
-    {{-- BODY --}}
-
-      <div class="container-fluid">
-      @yield('body')
-      @yield('body2')
-      @yield('body3')
-      @yield('body4')
-      
-      
-        
-      </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
->>>>>>> 38b8036b3d3d2539aa75d83aad68dedfda8d15d0
     
         @yield('rodape')
         <!-- Footer -->
