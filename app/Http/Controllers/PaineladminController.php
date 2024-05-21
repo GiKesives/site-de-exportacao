@@ -9,6 +9,6 @@ class paineladminController extends Controller
 {
     public function painelPage()
     {
-        return view('admin.painel');
+        return view('admin.painel-adm');
     }
 }

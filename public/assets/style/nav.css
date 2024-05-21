@@ -1,0 +1,102 @@
+/* Adiciona a classe de animação */
+.rotating-logo {
+    animation: rotateLogo 4s linear infinite; /* 4s para uma rotação completa, pode ajustar conforme necessário */
+}
+
+/* Define a animação de rotação */
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Estilo para o contêiner da logo */
+.logo {
+    display: inline-block; /* Permite que o contêiner se ajuste ao tamanho da imagem */
+    /* Adicione outros estilos conforme necessário */
+    padding-left: 39rem;
+}
+
+/* Estilo para a imagem da logo */
+.logo img {
+    max-width: 150px; /* Define a largura máxima da imagem */
+    max-height: 50px; /* Define a altura máxima da imagem */
+}
+
+
+
+
+/* Menu */
+
+
+.menu {
+ text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 30rem;
+    overflow: hidden;
+    background-color: #000000; /* Cor de fundo do menu */
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.menu ul li a:hover {
+    background-color: #a4a4a4; /* Cor de fundo ao passar o mouse */
+}
+
+.menu ul li a.active {
+    background-color: #ddd; /* Cor de fundo ao clicar */
+    color: #333; /* Cor do texto ao clicar */
+}
+/* login */
+.login {
+    display: flex;
+    align-items: center;
+    padding: 6px 7px;
+    margin-right: 20px;
+}
+
+.login a {
+    color: hsl(0, 0%, 7%);
+}
+
+.login .icon {
+    font-size: 1.6rem;
+    padding-right: 15px;
+}
+
+.login .font:hover {
+    color: hsl(60, 1%, 46%);
+}
+
+/* Social Media */
+.socialMedia {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+.socialMedia a {
+    color: hsl(60, 1%, 46%);
+}
+
+.socialMedia .iconSocial {
+    font-size: 1.1rem;
+    padding: 0 9px;
+}
