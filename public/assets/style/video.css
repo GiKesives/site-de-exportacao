@@ -1,0 +1,11 @@
+#video-banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Defina a largura do banner de acordo com o tamanho desejado */
+    height: 400px; /* Defina a altura do banner de acordo com o tamanho desejado */
+}
+#video-banner video {
+    width: 100%; /* Use 100% para ocupar toda a largura do #video-banner */
+    height: 100%; /* Use 100% para ocupar toda a altura do #video-banner */
+    object-fit: cover; /* Garante que o vídeo cubra todo o espaço disponível */
+}
