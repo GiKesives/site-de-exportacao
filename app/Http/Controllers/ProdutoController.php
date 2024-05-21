@@ -14,9 +14,10 @@ class ProdutoController extends Controller
         Produto::create([
      //nome da coluna no banco=> nome do campo do formulário
       'nome_produto'=>$request->nome_produto,
-      'tamanho'=>$request->tamanho,
-      'cor'=>$request->cor,
       'preco'=>$request->preco,
+      'cor'=>$request->cor,
+      'tamanho'=>$request->tamanho,
+      'descricao'=>$request->descricao,
     ]);
     }
 
@@ -28,5 +29,10 @@ class ProdutoController extends Controller
     public function cadastroPage()
     {
         return view('app.cadastro');
+    }
+
+    public function store(Request $request)
+    {
+        
     }
 }

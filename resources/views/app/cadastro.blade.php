@@ -15,6 +15,14 @@
                 <input type="name" name="nome_produto" class="form-control" placeholder="Seu nome">
             </div>
             <div class="mb-3">
+                <label class="form-label">Preço</label>
+                <input type="text" name="preco" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cor</label>
+                <input type="text" name="cor" class="form-control">
+            </div>
+            <div class="mb-3">
                 <label class="form-label">Tamanho:</label>
                     <select name="subject" class="form-control">
                         <option value="">Selecione uma opção</option>
@@ -24,12 +32,8 @@
                     </select>
             </div>
             <div class="mb-3">
-                <label class="form-label">Cor</label>
-                <input type="text" name="cor" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Preço</label>
-                <input type="text" name="preco" class="form-control">
+                <label class="form-label">Descrição:</label>
+                <input type="text" name="descricao" class="form-control">
             </div>
                 <button type="submit" class="form-control btn btn-primary">Cadastrar</button>
        </form>
