@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\paineladminController;
 use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\EspecificoController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,6 @@ Route::get('/painel', [paineladminController::class, 'painelPage'])->name('paine
 
 Route::get('/faq', [FaqController::class, 'faqPage'])->name('faq');
 
-
 Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
 Route::get('/produtos', [ProdutoController::class, 'produtoPage'])->name('produto');
@@ -28,5 +28,7 @@ Route::get('/produtos', [ProdutoController::class, 'produtoPage'])->name('produt
 Route::get('/cadastro', [ProdutoController::class, 'cadastroPage'])->name('cadastro');
 
 Route::post('/cadastro', [ProdutoController::class, 'enviarFormProduto'])->name('cadastro.submit');
+
+Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->name('especifico');
 
 Route::resource('categorias', CategoriaController::class);
