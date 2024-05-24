@@ -11,15 +11,15 @@
        <form action="{{ route('cadastro.submit') }}" method="post" class="mt-4 mb-4">
             @csrf
             <div class="mb-3">
-                <label class="form-label">Nome</label>
+                <label class="form-label">Nome:</label>
                 <input type="name" name="nome_produto" class="form-control" placeholder="Seu nome">
             </div>
             <div class="mb-3">
-                <label class="form-label">Preço</label>
+                <label class="form-label">Preço:</label>
                 <input type="text" name="preco" class="form-control">
             </div>
             <div class="mb-3">
-                <label class="form-label">Cor</label>
+                <label class="form-label">Cor:</label>
                 <input type="text" name="cor" class="form-control">
             </div>
             <div class="mb-3">

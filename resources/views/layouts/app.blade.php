@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+     @yield('title')
      
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/header.css" />
@@ -28,7 +28,6 @@
           body {
             background-color: black; /* Definindo o fundo do site como preto */
             color: white; /* Definindo a cor do texto como branco */
-            
         }
 </style>
 
@@ -44,7 +43,7 @@
 
 <section class="logo">
     <a href="home.blade.php">
-        <img src="logo.png" alt="Nome da sua empresa" class="rotating-logo">
+        <img src="{{ asset('assets/image/logo.png') }}" alt="Nome da sua empresa" class="rotating-logo">
     </a>
 </section>
     </div>
@@ -53,208 +52,23 @@
             <div class="headerRow">
     
                <!-- Menu -->
-<section class="menu">
-    <ul>
-        <li class="font"><a href="home.blade.php">Home</a></li>
-        <li class="font"><a href="produtos.blade.php">Produtos</a></li>
-        <li class="font"><a href="sobre-nos.blade.php">Sobre-nos</a></li>
-        <li class="font"><a href="faq.blade.php">FAQ</a></li>
-        <li class="font"><a href="painel-adm.blade.php">Painel Adm</a></li>
-    </ul>
-</section>
+    <section class="menu">
+        <ul>
+            <li class="font"><a href="{{ route('home')}}">Home</a></li>
+            <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
+            <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
+            <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
+            <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
+            <li class="font"><a href="{{ route('cadastro')}}">Painel Adm</a></li>
+        </ul>
+    </section>
                 <!-- Search -->
 
             </div>
         
         </div>
     </header>
-    <main id="container">
-        <!-- video --> 
-        <section>
-<div id="video-banner">
-    <video autoplay muted loop>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
- </section>
-                <!-- Product --> 
-        <section class="product">
-            <!-- First line -->
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Mais vendido</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>Camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ 150,00</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Mais vendido</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <!-- Second line -->
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Promoção</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <div class="productPrice">
-                        <button type="button" class="btn btn-secondary">R$ preço</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <!-- Third line -->
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Mais vendido</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Mais vendido</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-        </section>
-
+    @yield('body')
         <!-- Information -->
         <section class="info">
             <!-- Free shipping -->

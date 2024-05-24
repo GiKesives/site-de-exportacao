@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-     
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/style/header.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/style/nav.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/style/product.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/style/info.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/style/about.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/style/footer.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/style/video.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+@extends('layouts.app')
 
+@section('title')
+<title>Home</title>
+@endsection
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -70,11 +55,12 @@
     <main id="container">
         <!-- video --> 
         <section>
+    <section>
 <div id="video-banner">
-    <video autoplay muted loop>
-        <source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<video autoplay muted loop>
+    <source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 </div>
  </section>
                 <!-- Product --> 
@@ -511,6 +497,166 @@
                 </section>
             </div>
         </div>
-    </footer>
-</body>
-</html>
+
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag">
+                <span>Mais vendido</span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <!-- Second line -->
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag">
+                <span>Promoção</span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <div class="productPrice">
+                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <!-- Third line -->
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag">
+                <span>Mais vendido</span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag">
+                <span>Mais vendido</span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+
+        <div class="productCard">
+            <div class="productCardFlag hide">
+                <span></span>
+            </div>
+            <div class="productCardImage">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            </div>
+            <div class="productInfo">
+                <h2>camiseta ""</h2>
+                <hr />
+                <button type="button" class="btn btn-secondary">R$ preço</button>
+            </div>
+        </div>
+    </section>
+
+@endsection
+
