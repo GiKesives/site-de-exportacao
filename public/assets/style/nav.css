@@ -16,7 +16,7 @@
 .logo {
     display: inline-block; /* Permite que o contêiner se ajuste ao tamanho da imagem */
     /* Adicione outros estilos conforme necessário */
-    padding-left: 39rem;
+    padding-left: 33rem;
 }
 
 /* Estilo para a imagem da logo */
@@ -38,7 +38,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 30rem;
+    padding-left: 24rem;
     overflow: hidden;
     background-color: #000000; /* Cor de fundo do menu */
 }

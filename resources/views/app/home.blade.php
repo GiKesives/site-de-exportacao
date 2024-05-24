@@ -52,15 +52,15 @@
             <div class="headerRow">
     
                <!-- Menu -->
-<section class="menu">
-    <ul>
-        <li class="font"><a href="{{ route('home')}}">Home</a></li>
-        <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
-        <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
-        <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
-        <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
-    </ul>
-</section>
+            <section class="menu">
+                <ul>
+                    <li class="font"><a href="{{ route('home')}}">Home</a></li>
+                    <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
+                    <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
+                    <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
+                    <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
+                </ul>
+            </section>
                 <!-- Search -->
 
             </div>
@@ -85,12 +85,20 @@
                     <span>Mais vendido</span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>Camiseta ""</h2>
+                    <h2>Camiseta Sza</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ 150,00</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                     
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -99,13 +107,21 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/justin-frente-cinza.png') }}" alt="Product One" />
 
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Justin Biber</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                       
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -114,12 +130,20 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/bruno-frente-marrom.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>camiseta Bruno Mars</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                       
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -128,12 +152,20 @@
                     <span>Mais vendido</span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/travis-frente-preta.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Travis Scott </h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                       
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -143,28 +175,67 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/baco-frente-preta.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Baco Exu Do Blues</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
-
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Promoção</span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <div class="productPrice">
-                        <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                      
                     </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="productCardFlag hide">
+                    <span></span>
+                </div>
+                <div class="productCardImage">
+                    <img src="{{ asset('assets/image/beyonce-frente-cinza.png') }}" alt="Product One" />
+                </div>
+                <div class="productInfo">
+                    <h2>Camiseta Beyoncé</h2>
+                    <hr />
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>
+                    
+
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
+                </div>
+                
+            </div>
+
+          
+            <div class="productCard">
+                <div class="productCardFlag hide">
+                    <span></span>
+                </div>
+                <div class="productCardImage">
+                    <img src="{{ asset('assets/image/matue-frente-branca.png') }}" alt="Product One" />
+                </div>
+                <div class="productInfo">
+                    <h2>Camiseta Matuê</h2>
+                    <hr />
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                      
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -173,26 +244,22 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Sza</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
-                </div>
-            </div>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>
+                        
 
-            <div class="productCard">
-                <div class="productCardFlag hide">
-                    <span></span>
-                </div>
-                <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                </div>
-                <div class="productInfo">
-                    <h2>camiseta ""</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -202,12 +269,20 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/matue-frente-preta.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Matuê</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                     
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -216,12 +291,20 @@
                     <span>Mais vendido</span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/personalize-cinza.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Personalize</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                     
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -230,12 +313,20 @@
                     <span>Mais vendido</span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/personalize-preta.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Personalize</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                     
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
 
@@ -244,12 +335,20 @@
                     <span></span>
                 </div>
                 <div class="productCardImage">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="{{ asset('assets/image/justin-frente-preta.png') }}" alt="Product One" />
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta ""</h2>
+                    <h2>Camiseta Justin</h2>
                     <hr />
-                    <button type="button" class="btn btn-secondary">R$ preço</button>
+                    <div class="item-price-container mb-2" data-store="product-item-price-204463675">
+                        <span class="js-compare-price-display price-compare " style="display:none;">
+                            R$0,00
+                        </span>
+                        <span class="js-price-display item-price">
+                            R$160,00
+                        </span>                      
+                    </div>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
                 </div>
             </div>
         </section>
