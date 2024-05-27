@@ -13,7 +13,7 @@
         </p>
     </div>
 </article>
-</main>
+</main> 
 @endsection
 
 

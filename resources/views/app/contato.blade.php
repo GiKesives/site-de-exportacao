@@ -11,15 +11,15 @@
        <form action="{{ route('contato.submit') }}" method="post" class="mt-4 mb-4">
             @csrf
             <div class="mb-3">
-                <label class="form-label">Nome</label>
+                <label class="form-label">Nome:</label>
                 <input type="name" name="nome" class="form-control" placeholder="Seu nome">
             </div>
             <div class="mb-3">
-                <label class="form-label">Email</label>
+                <label class="form-label">Email:</label>
                 <input type="email" name="email" class="form-control" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label class="form-label">Telefone</label>
+                <label class="form-label">Telefone:</label>
                 <input type="text" name="telefone" class="form-control">
             </div>
             <div class="mb-3">
@@ -32,10 +32,10 @@
                     </select>
             </div>
             <div class="mb-3">
-                <label class="form-label">Mensagem</label>
+                <label class="form-label">Mensagem:</label>
                     <textarea class="form-control" rows="3" name="message"></textarea>
             </div>
-                <button type="submit" class="form-control btn btn-primary">Enviar</button>
+                <button type="submit" class="form-control btn btn-secondary">Enviar</button>
        </form>
     </div>
     <div class="col"></div>

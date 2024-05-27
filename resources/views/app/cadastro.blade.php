@@ -33,9 +33,10 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Descrição:</label>
-                <input type="text" name="descricao" class="form-control">
+                {{-- <input type="text" name="descricao" class="form-control"> --}}
+                <textarea class="form-control" rows="3" name="descricao"></textarea>
             </div>
-                <button type="submit" class="form-control btn btn-primary">Cadastrar</button>
+                <button type="submit" class="form-control btn btn-secondary">Cadastrar</button>
        </form>
     </div>
     <div class="col"></div>

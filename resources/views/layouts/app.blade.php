@@ -25,9 +25,30 @@
 
     <title>Loja de camisetas personalizadas</title>
 <style>
-          body {
+        body {
             background-color: black; /* Definindo o fundo do site como preto */
             color: white; /* Definindo a cor do texto como branco */
+        }
+
+        .icons {
+            margin-left: auto; /* Isso empurrará os ícones para a direita */
+        }
+
+        .icons ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .icons ul li {
+            display: inline-block; /* Isso fará com que os ícones fiquem lado a lado */
+            margin-left: 20px; /* Adiciona um espaço entre os ícones */
+        }
+
+        .icons ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
         }
 </style>
 
@@ -42,7 +63,7 @@
 <!-- Logo -->
 
 <section class="logo">
-    <a href="home.blade.php">
+    <a href="{{ route('home')}}">
         <img src="{{ asset('assets/image/logo.png') }}" alt="Nome da sua empresa" class="rotating-logo">
     </a>
 </section>
@@ -52,20 +73,24 @@
             <div class="headerRow">
     
                <!-- Menu -->
-    <section class="menu">
-        <ul>
-            <li class="font"><a href="{{ route('home')}}">Home</a></li>
-            <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
-            <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
-            <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
-            <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
-            <li class="font"><a href="{{ route('cadastro')}}">Painel Adm</a></li>
-        </ul>
-    </section>
+        <section class="menu">
+            <ul>
+                <li class="font"><a href="{{ route('home')}}">Home</a></li>
+                <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
+                <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
+                <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
+                <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
+                <li class="font"><a href="{{ route('cadastro')}}">Painel Adm</a></li>
+            </ul>
+        </section>
+        <section class="icons">
+            <ul>
+                <li><a href="{{ route('perfil') }}"><i class="fa fa-user"></i></a></li>
+                <li><a href="{{ route('carrinho') }}"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </section>
                 <!-- Search -->
-
             </div>
-        
         </div>
     </header>
     @yield('body')
