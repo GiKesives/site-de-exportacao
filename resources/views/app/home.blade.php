@@ -39,7 +39,9 @@
                             R$160,00
                         </span>                     
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -63,7 +65,9 @@
                             R$160,00
                         </span>                       
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -87,7 +91,9 @@
                             R$160,00
                         </span>                       
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -111,7 +117,9 @@
                             R$160,00
                         </span>                       
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -136,7 +144,9 @@
                             R$160,00
                         </span>                      
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
             <div class="productCard">
@@ -161,7 +171,9 @@
                     
 
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
                 
             </div>
@@ -187,7 +199,9 @@
                             R$160,00
                         </span>                      
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -213,7 +227,9 @@
                         
 
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -238,7 +254,9 @@
                             R$160,00
                         </span>                     
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -262,7 +280,9 @@
                             R$160,00
                         </span>                     
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -286,7 +306,9 @@
                             R$160,00
                         </span>                     
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
 
@@ -310,7 +332,9 @@
                             R$160,00
                         </span>                      
                     </div>
+                    <a href="{{ route('especifico')}}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
         </section>

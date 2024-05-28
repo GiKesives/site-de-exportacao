@@ -19,14 +19,25 @@ class CategoriaController extends Controller
 
     }
 
+    public function create()
+    {
+        return view('admin.categorias.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        $categorias = Categoria::create();
 
-        return view('admin.categorias.create', ['categorias' => $categorias]);
+        Categoria::create([
+        //nome da coluna no banco=> nome do campo do formulário
+        'nome_categoria'=>$request->nome_categoria,
+        'descricao_categoria'=>$request->descricao_categoria,
+        ]);
+
+        return view('admin.categorias.create');
+
     }
 
     /**
@@ -35,6 +46,11 @@ class CategoriaController extends Controller
     public function show(Categoria $categoria)
     {
         return view('app.categorias', $categoria);
+    }
+
+    public function edit()
+    {
+        return view('admin.categorias.edit');
     }
 
     /**

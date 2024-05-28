@@ -28,6 +28,8 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
 Route::get('/produtos', [ProdutoController::class, 'produtoPage'])->name('produto');
 
+Route::post('/produtos', [ProdutoController::class, 'store'])->name('produto');
+
 Route::get('/cadastro', [ProdutoController::class, 'cadastroPage'])->name('cadastro');
 
 Route::post('/cadastro', [ProdutoController::class, 'enviarFormProduto'])->name('cadastro.submit');

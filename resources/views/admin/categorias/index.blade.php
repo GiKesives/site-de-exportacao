@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title')
+@endsection
+
 @section('body')
 <table>
     <thead>
@@ -11,8 +14,8 @@
         @forelse ($categorias as $categoria)
             <tr>
                 <td>{{ $categoria->id}} </td>
-                <td>{{ $categoria->nome}} </td>
-                <td>{{ $categoria->descricao}} </td>
+                <td>{{ $categoria->nome_categoria}} </td>
+                <td>{{ $categoria->descricao_categoria}} </td>
             </tr>
         @empty
             <tr>

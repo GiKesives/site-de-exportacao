@@ -83,12 +83,12 @@
                 <li class="font"><a href="{{ route('cadastro')}}">Painel Adm</a></li>
             </ul>
         </section>
-        <section class="icons">
+        {{-- <section class="icons">
             <ul>
                 <li><a href="{{ route('perfil') }}"><i class="fa fa-user"></i></a></li>
                 <li><a href="{{ route('carrinho') }}"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
-        </section>
+        </section> --}}
                 <!-- Search -->
             </div>
         </div>

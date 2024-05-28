@@ -8,18 +8,19 @@ use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
 {
-    public function enviarFormProduto(Request $request){
-        dd($request->all());
+    // public function enviarFormProduto(Request $request)
+    // {
+    // Produto::create([
+    //  //nome da coluna no banco=> nome do campo do formulário
+    //   'nome_produto'=>$request->nome_produto,
+    //   'preco'=>$request->preco,
+    //   'cor'=>$request->cor,
+    //   'tamanho'=>$request->tamanho,
+    //   'descricao'=>$request->descricao,
+    // ]);
 
-        Produto::create([
-     //nome da coluna no banco=> nome do campo do formulário
-      'nome_produto'=>$request->nome_produto,
-      'preco'=>$request->preco,
-      'cor'=>$request->cor,
-      'tamanho'=>$request->tamanho,
-      'descricao'=>$request->descricao,
-    ]);
-    }
+    // return view('cadastro');
+    // }
 
     public function produtoPage()
     {
@@ -34,5 +35,16 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         
+        Produto::create([
+            //nome da coluna no banco=> nome do campo do formulário
+             'nome'=>$request->nome,
+             'preco'=>$request->preco,
+             'cor'=>$request->cor,
+             'tamanho'=>$request->tamanho,
+             'descricao'=>$request->descricao,
+             'categoria_id'=>$request->categoria_id,
+           ]);
+       
+           return back()->withSuccess('Cadastro realizado!');
     }
 }

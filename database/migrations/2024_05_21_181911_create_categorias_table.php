@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('nome_categoria');
             $table->text('descricao_categoria')->nullable();
-            $table->unsignedBigInteger('categoria_id');
             $table->timestamps();
         });
     }

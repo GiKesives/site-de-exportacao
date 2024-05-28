@@ -8,11 +8,11 @@
 <div class="row">
     <div class="col"></div>
     <div class="col">
-       <form action="{{ route('cadastro.submit') }}" method="post" class="mt-4 mb-4">
+       <form action="{{ route('produto') }}" method="post" class="mt-4 mb-4">
             @csrf
             <div class="mb-3">
                 <label class="form-label">Nome:</label>
-                <input type="name" name="nome_produto" class="form-control" placeholder="Seu nome">
+                <input type="name" name="nome" class="form-control" placeholder="Seu nome">
             </div>
             <div class="mb-3">
                 <label class="form-label">Preço:</label>

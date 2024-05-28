@@ -1,35 +1,19 @@
 @extends('layouts.app')
 
-@section('body')
+@section('title')
+@endsection
 
-<form action="{{ route('categorias')}}" method="POST">
+@section('body')
+<form action="{{ route('categorias.store')}}" method="POST">
+    @csrf
     <div>
         <label class="form-label">Nome:</label>
-        <input type="name" name="nome" class="form-control" placeholder="Seu nome">
+        <input type="name" name="nome_categoria" class="form-control" placeholder="Seu nome">
     </div>
     <div>
         <label class="form-label">Descrição:</label>
-        <input type="name" name="descricao" class="form-control">
+        <input type="name" name="descricao_categoria" class="form-control">
+        <button type="submit" class="form-control btn btn-secondary">Cadastrar</button>
     </div>
 </form>
-<table>
-    <thead>
-    <th>#ID</th>
-    <th>Nome</th>
-    <th>Descrição</th>
-    </thead>
-    <tbody>
-        @forelse ($categorias as $categoria)
-            <tr>
-                <td>{{ $categoria->id}} </td>
-                <td>{{ $categoria->nome}} </td>
-                <td>{{ $categoria->descricao}} </td>
-            </tr>
-        @empty
-            <tr>
-                <td>Não deu certo BURRÃO!</td>
-            </tr>
-        @endforelse
-    </tbody>
-</table>
 @endsection
