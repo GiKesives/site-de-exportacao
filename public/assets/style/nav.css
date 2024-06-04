@@ -4,14 +4,7 @@
 }
  
 /* Define a animação de rotação */
-@keyframes rotateLogo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 /* Estilo para o contêiner da logo */
 .logo {
     display: block; /* Permite que o contêiner se ajuste ao tamanho da imagem */
@@ -104,4 +97,15 @@ section.menu {
     font-size: 1.1rem;
     padding: 0 9px;
 }
- 
+.login {
+    position: absolute;
+    top: 20px;
+    right: 62px;
+}
+
+.carrinho {
+    position: absolute;
+    top: 26px;
+    right: 150px;
+}
+
