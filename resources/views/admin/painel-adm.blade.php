@@ -6,7 +6,7 @@
 
 @section('body')
 <div class="container">
-    <form>
+    <form method="POST" action="{{ route('login')}}">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Usuario</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
