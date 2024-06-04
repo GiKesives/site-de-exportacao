@@ -41,3 +41,7 @@ Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
 Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
 
 Route::resource('categorias', CategoriaController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

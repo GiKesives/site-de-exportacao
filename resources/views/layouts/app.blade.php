@@ -98,14 +98,13 @@
         <section class="info">
             <!-- Free shipping -->
             <div class="infoCard">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                    <g id="Layer_1">
-                        <path d="M3,49h44V15h2V1H1v14h2V49z M45,47H5V15h40V47z M3,3h44v10H3V3z"/>
-                        <path d="M15,27h20c2.206,0,4-1.794,4-4s-1.794-4-4-4H15c-2.206,0-4,1.794-4,4S12.794,27,15,27z M15,21h20c1.103,0,2,0.897,2,2
-                            s-0.897,2-2,2H15c-1.103,0-2-0.897-2-2S13.897,21,15,21z"/>
-                    </g>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"/>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                  </svg>
+                  
                 <div class="infoCardText">
                     <p>Frete Grátis</p>
                     <p>Confira Condições</p>
@@ -113,19 +112,10 @@
             </div>
             <!-- Information -->
             <div class="infoCard">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                    <g>
-                        <polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,59 22,51 42,59 63,51 63,5 42,13 22,5 
-                            1,13 	"/>
-                        <g>
-                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="22" y1="5" x2="22" y2="51"/>
-                        </g>
-                        <g>
-                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="42" y1="13" x2="42" y2="59"/>
-                        </g>
-                    </g>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C8.14 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.14-7-7-7zM12 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  
                 <div class="infoCardText">
                     <p>Enviamos</p>
                     <p>para todo Brasil</p>
@@ -133,21 +123,11 @@
             </div>
             <!-- Pay -->
             <div class="infoCard">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 100.353 100.353" style="enable-background:new 0 0 100.353 100.353;" xml:space="preserve">
-                    <g>
-                        <path d="M89.381,19.52h-78.76c-3.983,0-7.224,3.241-7.224,7.224v4.828v10.404v31.281c0,3.983,3.241,7.223,7.224,7.223h78.76
-                            c3.983,0,7.223-3.24,7.223-7.223V41.976V31.572v-4.828C96.604,22.761,93.364,19.52,89.381,19.52z M6.396,26.744
-                            c0.001-2.33,1.895-4.224,4.224-4.224h78.76c2.329,0,4.223,1.895,4.223,4.224v3.328H6.396V26.744z M93.604,73.256
-                            c0,2.328-1.895,4.223-4.223,4.223h-78.76c-2.329,0-4.224-1.895-4.224-4.223V43.475h87.207V73.256z M93.604,40.475H6.397v-7.404
-                            h87.207V40.475z"/>
-                        <path d="M17.894,71.566c2.885,0,5.231-2.345,5.231-5.227c0-2.884-2.346-5.231-5.231-5.231c-2.883,0-5.229,2.347-5.229,5.231
-                            C12.665,69.221,15.011,71.566,17.894,71.566z M17.894,64.108c1.23,0,2.231,1.001,2.231,2.231c0,1.228-1.001,2.227-2.231,2.227
-                            c-1.229,0-2.229-0.999-2.229-2.227C15.665,65.109,16.665,64.108,17.894,64.108z"/>
-                        <path d="M29.08,68.015h42.264c0.829,0,1.5-0.671,1.5-1.5s-0.671-1.5-1.5-1.5H29.08c-0.829,0-1.5,0.671-1.5,1.5
-                            C27.58,67.344,28.251,68.015,29.08,68.015z"/>
-                    </g>
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                    <line x1="1" y1="10" x2="23" y2="10"/>
+                  </svg>
+                  
                 <div class="infoCardText">
                     <p>Até 12x sem juros</p>
                     <p>10% Off no Boleto</p>
@@ -210,15 +190,15 @@
                     </div>
                     <div class="footerImage">
                         <div>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                            <g id="Layer_1">
-                                <path d="M1,8.259V9c0,15.767,8.366,30.655,21.835,38.853L25,49.17l2.165-1.318C40.634,39.655,49,24.767,49,9V8.259L25,0.955
-                                    L1,8.259z M26.126,46.145L25,46.83l-1.126-0.685C11.209,38.435,3.263,24.538,3.007,9.739L25,3.045l21.993,6.693
-                                    C46.737,24.538,38.791,38.435,26.126,46.145z"/>
-                                <polygon points="15.707,25.293 14.293,26.707 22,34.414 41.707,14.707 40.293,13.293 22,31.586"/>
-                            </g>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M5 12l5 5L19 7"/>
+                              </svg>
+                              
                         </div>
+                        
+
+                          
                         <div>
                             <p>
                                 Ambiente 100% Seguro. Sua Informação é Protegida Pela Criptografia SSL 256-Bit.
