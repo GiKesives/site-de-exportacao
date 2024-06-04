@@ -1,5 +1,5 @@
 .about {
-    background: hsla(0, 0%, 90%, 0.35);
+    background: hsla(0, 0%, 0%, 0.35);
     display: flex;
     flex-direction: column;
     height: 572px;
