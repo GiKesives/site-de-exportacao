@@ -10,8 +10,7 @@ use App\Http\Controllers\paineladminController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\SobreNosController;
-
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/contato', [ContatoController::class, 'contatoPage'])->name('contato');
@@ -41,3 +40,8 @@ Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
 Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
 
 Route::resource('categorias', CategoriaController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'homePage'])->name('home');
+
