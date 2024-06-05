@@ -47,4 +47,11 @@ class ProdutoController extends Controller
        
            return back()->withSuccess('Cadastro realizado!');
     }
+
+    public function show($id)
+    {
+        $produto = Produto::findOrFail($id);
+        return view('app.produtoEspecifico');
+    }
+
 }

@@ -30,6 +30,11 @@
         font-size: 16px;
         font-weight: bold;
         text-align: left;
+    } 
+    .row h3{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
     }
     .row p{
         font-size: 0.87rem;
@@ -61,17 +66,14 @@
                 </a>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <br> 
                 <div class="row">
                     <div class="container">
                         <h2>Descrição</h2>
                         <p>Nossas camisas são 100% algodão em malha 30.1 penteada, gramatura de 180 gramas e gola canelada 2x1 com 3 cm de altura. E estampada em Silk DTG de ALTA qualidade.</p>
                         <br>
-                        <br>
-                        <br>
+                        <h3>Para camisetas personalizadas </h3>
+                        <p>Em até 48 horas entraremos em contato para mais informações.</p>
                     </div>
                 </div>
             </div>
