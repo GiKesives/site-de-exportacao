@@ -11,4 +11,15 @@ class CarrinhoController extends Controller
     {
         return view('app.carrinho');
     }
+
+    public function formCompra()
+    {
+        return view('app.compra');
+    }
+    
+    public function finalizarCompra(Request $request)
+    {
+
+    return view('app.compraFinalizada');
+    }
 }
