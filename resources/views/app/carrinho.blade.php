@@ -35,6 +35,12 @@
                     </tr>
                     @endforelse --}}
                 </tbody>
+                <tr>
+                    <td colspan="5" class="text-end">
+                        <a href="{{ route('compra')}}" class="btn btn-secondary">Finalizar a compra</a>
+                        <a href="{{ route('produto')}}" class="btn btn-secondary">Ver mais produtos</a>
+                    </td>
+                </tr>
                 <tfoot>
                     {{-- <tr>
                         <td colspan="4" class="text-end">Total a pagar:</td>

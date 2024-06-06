@@ -39,7 +39,13 @@ Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->nam
 
 Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
 
+//Route::get('/compra', [PerfilController::class, 'formCompra'])->name('compra');
+
+//Route::post('/Sucesso', [PerfilController::class, 'compra sucesso'])->name('compra');
+
 Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
+Route::get('/compra', [CarrinhoController::class, 'formCompra'])->name('compra');
+Route::post('/finalizar-compra', [CarrinhoController::class, 'finalizarCompra'])->name('finalizar.compra');
 
 Route::get('/compra', [CompraController::class, 'compraPage'])->name('compra');
 
