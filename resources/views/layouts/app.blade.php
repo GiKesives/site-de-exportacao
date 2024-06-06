@@ -262,19 +262,20 @@
 
                 <!-- Newsletter -->
                 <section class="footerNewsletter">
-                    <div class="footerTitle">
-                        <h5>Junte-se à lista de e-mails e não perca as novidades</h5>
-                    </div>
-                    <div class="newsletterForm">
-                        <form action="/form-data" method="post">
-                            <label for="email">
-                                Insira o seu e-mail aqui *
-                            </label>
-                            <input type="email" name="email" id="email">
-                            <button type="submit">Assine Já</button>
-                        </form>
-                    <!-- </div> -->
-                </section>
+    <div class="footerTitle">
+        <h5>Junte-se à lista de e-mails e não perca as novidades</h5>
+    </div>
+    <div class="newsletterForm">
+        <form action="/form-data" method="post">
+            <label for="email">
+                Insira o seu e-mail aqui *
+            </label>
+            <input type="email" name="email" id="email" class="white-text"> <!-- Adicionei a classe white-text aqui -->
+            <button type="submit">Assine Já</button>
+        </form>
+    </div>
+</section>
+
             </div>
         </div>
     </footer>

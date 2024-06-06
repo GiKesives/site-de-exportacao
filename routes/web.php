@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\CompraController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\EspecificoController;
 use App\Http\Controllers\FaqController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\paineladminController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\SobreNosController;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +40,8 @@ Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->nam
 Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
 
 Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
+
+Route::get('/compra', [CompraController::class, 'compraPage'])->name('compra');
 
 Route::resource('categorias', CategoriaController::class);
 

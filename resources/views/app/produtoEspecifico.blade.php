@@ -61,7 +61,7 @@
                 <hr />
                 <h2>Tamanho:</h2>
                 <hr />
-                <a href="{{ route('carrinho')}}">
+                <a href="{{ route('compra')}}">
                 <button type="button" class="btn btn-secondary">Comprar</button>
                 </a>
                 <br>

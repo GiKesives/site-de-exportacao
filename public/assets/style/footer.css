@@ -7,6 +7,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+.white-text {
+    color: white;
+}
 
 .footerNav, 
 .footerInfos, 
