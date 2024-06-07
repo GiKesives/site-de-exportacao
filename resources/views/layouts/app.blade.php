@@ -64,11 +64,55 @@
         <div id="container">
 <!-- Logo -->
 
+
 <section class="logo">
     <a href="{{ route('home')}}">
         <img src="{{ asset('assets/image/logo.png') }}" alt="Nome da sua empresa" class="rotating-logo">
     </a>
 </section>
+<section class="login">
+<a href="{{ route('login')}}">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#ffffff"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path
+    d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+  ></path>
+  <circle cx="12" cy="7" r="4"></circle>
+</svg>
+</a>
+</section>
+
+<section class="carrinho">   
+ <a href="{{ route('carrinho')}}">
+ <svg    xmlns="http://www.w3.org/2000/svg" 
+  width="24"  
+ height="24"  
+ viewBox="0 0 24 24"  
+ fill="none" 
+ stroke="#ffffff"
+ stroke-width="2"
+ stroke-linecap="round" 
+ stroke-linejoin="round" >  
+ <circle cx="9" cy="21" r="1">
+ </circle> 
+ <circle cx="20" cy="21" r="1">
+</circle>   
+<path     d="M1 1h4l2.68 12.32a2 2 0 0 0 2 1.68h9.72a2 2 0 0 0 2-1.68L23 6H6"   >
+</path> 
+</svg>  
+</a>
+ </section>
+
+
     </div>
     </nav>
         <div id="container">
@@ -219,19 +263,20 @@
 
                 <!-- Newsletter -->
                 <section class="footerNewsletter">
-                    <div class="footerTitle">
-                        <h5>Junte-se à lista de e-mails e não perca as novidades</h5>
-                    </div>
-                    <div class="newsletterForm">
-                        <form action="/form-data" method="post">
-                            <label for="email">
-                                Insira o seu e-mail aqui *
-                            </label>
-                            <input type="email" name="email" id="email">
-                            <button type="submit">Assine Já</button>
-                        </form>
-                    <!-- </div> -->
-                </section>
+    <div class="footerTitle">
+        <h5>Junte-se à lista de e-mails e não perca as novidades</h5>
+    </div>
+    <div class="newsletterForm">
+        <form action="/form-data" method="post">
+            <label for="email">
+                Insira o seu e-mail aqui *
+            </label>
+            <input type="email" name="email" id="email" class="white-text"> <!-- Adicionei a classe white-text aqui -->
+            <button type="submit">Assine Já</button>
+        </form>
+    </div>
+</section>
+
             </div>
         </div>
     </footer>

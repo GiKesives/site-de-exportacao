@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\CompraController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\EspecificoController;
 use App\Http\Controllers\FaqController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\ProdutoPageController;
 use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\UserController;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +32,17 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home');
 Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->name('especifico');
 
 Route::get('/carrinho/{id}', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
+Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
+
+//Route::get('/compra', [PerfilController::class, 'formCompra'])->name('compra');
+
+//Route::post('/Sucesso', [PerfilController::class, 'compra sucesso'])->name('compra');
+
+// Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
+// Route::get('/compra', [CarrinhoController::class, 'formCompra'])->name('compra');
+// Route::post('/finalizar-compra', [CarrinhoController::class, 'finalizarCompra'])->name('finalizar.compra');
+
+Route::get('/compra', [CompraController::class, 'compraPage'])->name('compra');
 
 Route::resource('categorias', CategoriaController::class);
 

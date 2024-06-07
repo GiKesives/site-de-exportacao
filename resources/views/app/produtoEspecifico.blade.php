@@ -35,6 +35,16 @@
         font-size: 16px;
         font-weight: bold;
         text-align: left;
+    } 
+    .row h3{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    } 
+    .row h3{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
     }
     .row p{
         font-size: 0.87rem;
@@ -93,14 +103,14 @@
                 <br>
                 <br>
                 <br>
-                <br>
+                <br> 
                 <div class="row">
                     <div class="container">
                         <h2>Descrição:</h2>
                         <p>{{ $produto->descricao}}</p>
                         <br>
-                        <br>
-                        <br>
+                        <h3>Para camisetas personalizadas </h3>
+                        <p>Em até 48 horas entraremos em contato para mais informações.</p>
                     </div>
                 </div>
             </div>

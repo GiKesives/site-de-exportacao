@@ -25,11 +25,11 @@
                 </div>
                 <div class="productCardImage">
                     <a href="{{ route('especifico')}}">
-                    <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="Product One" />
+                    <img src="{{ asset('assets/image/bruno-frente-preta.png') }}" alt="Product One" />
                     </a>
                 </div>
                 <div class="productInfo">
-                    <h2>Camiseta Sza</h2>
+                    <h2>Camiseta Bruno Mars</h2>
                     <hr />
                     <div class="item-price-container mb-2" data-store="product-item-price-204463675">
                         <span class="js-compare-price-display price-compare " style="display:none;">
@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="productInfo">
-                    <h2>camiseta Bruno Mars</h2>
+                    <h2>Camiseta Bruno Mars</h2>
                     <hr />
                     <div class="item-price-container mb-2" data-store="product-item-price-204463675">
                         <span class="js-compare-price-display price-compare " style="display:none;">
