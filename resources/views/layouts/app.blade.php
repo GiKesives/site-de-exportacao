@@ -21,6 +21,8 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
 
 
     <title>Loja de camisetas personalizadas</title>
@@ -76,11 +78,10 @@
         <section class="menu">
             <ul>
                 <li class="font"><a href="{{ route('home')}}">Home</a></li>
-                <li class="font"><a href="{{ route('produto')}}">Produtos</a></li>
+                <li class="font"><a href="{{ route('produtos.cliente')}}">Produtos</a></li>
                 <li class="font"><a href="{{ route('sobre-nos')}}">Sobre-nos</a></li>
                 <li class="font"><a href="{{ route('faq')}}">FAQ</a></li>
-                <li class="font"><a href="{{ route('painel-adm')}}">Painel Adm</a></li>
-                <li class="font"><a href="{{ route('cadastro')}}">Painel Adm</a></li>
+                <li class="font"><a href="{{ route('login')}}">Painel Adm</a></li>
             </ul>
         </section>
         {{-- <section class="icons">

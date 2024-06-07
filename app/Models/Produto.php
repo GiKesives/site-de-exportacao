@@ -15,6 +15,7 @@ class Produto extends Model
      'cor',
      'tamanho',
      'descricao',
+     'imagem',
      'categoria_id',
     ];
 

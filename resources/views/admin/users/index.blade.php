@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Listagem de Categorias</title>
+<title>Users</title>
 @endsection
 
 @section('body')
@@ -11,46 +11,37 @@
         <p>Aqui você pode gerenciar tudo sobre o seu site!</p>
         <div class="col"></div>
         <div class="col-9">
-            <h2>Tabela Categorias</h2>
+            <h2>Tabela Users</h2>
             <table class="table">
                 <thead>
                     <tr>
                         <th class="align-middle">ID</th>
                         <th class="align-middle">Nome</th>
-                        <th class="align-middle">Descrição</th>
+                        <th class="align-middle">Email</th>
+                        <th class="align-middle">Senha</th>
                         <th class="align-middle">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($categorias as $categoria)
+                    @forelse ($users as $user)
                         <tr>
-                            <td class="align-middle">{{ $categoria->id}} </td>
-                            <td class="align-middle">{{ $categoria->nome_categoria}} </td>
-                            <td class="align-middle">{{ $categoria->descricao_categoria}} </td>
-                            <td>
-                                <a href="{{ route('categorias.show', $categoria->id) }}" class="btn btn-info">Ver</a>
-                                <hr>
-                                <a href="{{ route('categorias.edit', $categoria->id) }}" class="btn btn-warning">Editar</a>
-                                <hr>
-                                <form action="{{ route('categorias.destroy', $categoria->id) }}" method="POST" style="display: inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Excluir</button>
-                                </form>
-                            </td>
-                            {{-- <td class="align-middle">
-                                <a href="{{ route('categorias.destroy', $categoria->id) }}" onclick="event.preventDefault(); if(confirm('Tem certeza que deseja excluir esta categoria?')) document.getElementById('delete-form-{{ $categoria->id }}').submit();">
+                            <td>{{ $user->id}} </td>
+                            <td>{{ $user->name}} </td>
+                            <td>{{ $user->email}} </td>
+                            <td>{{ $user->password}} </td>
+                            <td class="align-middle">
+                                <a href="{{ route('users.destroy', $user->id) }}" onclick="event.preventDefault(); if(confirm('Tem certeza que deseja excluir esta categoria?')) document.getElementById('delete-form-{{ $user->id }}').submit();">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
-                                <form id="delete-form-{{ $categoria->id }}" action="{{ route('categorias.destroy', $categoria->id) }}" method="POST" style="display: none;">
+                                <form id="delete-form-{{ $user->id }}" action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: none;">
                                     @csrf
                                     @method('DELETE')
                                 </form>
-                            </td> --}}
+                            </td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="6" class="text-center">Sem categoria!</td>
+                            <td colspan="6" class="text-center">Sem User!</td>
                         </tr>
                     @endforelse
                     {{-- <tr>

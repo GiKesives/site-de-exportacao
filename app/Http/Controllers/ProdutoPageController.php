@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PerfilController extends Controller
+class ProdutoPageController extends Controller
 {
-    public function perfilPage()
+    public function produtoPage()
     {
-        return view('app.perfil');
+        return view('app.produtos');
     }
 }

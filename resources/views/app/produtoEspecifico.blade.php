@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('title')
@@ -18,7 +19,11 @@
         width: auto;
     }
     .col-4 img{
-        height: 300px;
+        height: 320px;
+        width: auto;
+    }
+    .col-6 img{
+        height: 550px;
         width: auto;
     }
     .row h1{
@@ -35,28 +40,52 @@
         font-size: 0.87rem;
     }
 </style>
-<div class="container">
+
+{{-- <div class="container">
     <div class="row">
         <div class="col-3">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Imagens laterais"/>
-            <br>
-            <br>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Imagens laterais"/>
+            <img src="{{ asset($produto->imagem) }}" alt="{{ $produto->nome }}" />
         </div>
         <div class="col-6">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+            <h2>{{ $produto->nome }}</h2>
+            <p>Preço: R$ {{ $produto->preco }}</p>
+            <h2>Cores disponíveis:</h2>
+            <p>{{ $produto->cor }}</p>
+            <h2>Tamanho:</h2>
+            <p>{{ $produto->tamanho }}</p>
+            <a href="{{ route('carrinho', ['id' => $produto->id]) }}" class="btn btn-secondary">Adicionar ao Carrinho</a>
+                {{-- <button type="button" class="btn btn-secondary">Comprar</button> --}}
+            {{-- </a>
+            <div class="container">
+                <h2>Descrição</h2>
+                <p>{{ $produto->descricao }}</p>
+            </div>
+        </div>
+    </div>
+</div> --}} 
+
+ <div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img src={{ asset($produto->imagem) }} alt={{ $produto->nome}}/>
+            <br>
+            <br>
+            <img src={{ asset($produto->imagem) }} alt={{ $produto->nome}}/>
+        </div>
+        <div class="col-6">
+            <img src={{ asset($produto->imagem) }} alt={{ $produto->nome}} />
         </div>
         <div class="col-3">
             <div class="container">
-                <h2>Camiseta "":</h2>
+                <h2>{{ $produto->nome}}</h2>
                 <hr />
-                <h2>R$ Preço:</h2>
+                <h2>{{ $produto->preco}}</h2>
                 <hr />
-                <h2>Cores disponiveis:</h2>
+                <h2>{{ $produto->cor}}</h2>
                 <hr />
-                <h2>Tamanho:</h2>
+                <h2>{{$produto->descricao}}</h2>
                 <hr />
-                <a href="{{ route('carrinho')}}">
+                <a href="{{ route('carrinho', ['id' => $produto->id]) }}">
                 <button type="button" class="btn btn-secondary">Comprar</button>
                 </a>
                 <br>
@@ -67,8 +96,8 @@
                 <br>
                 <div class="row">
                     <div class="container">
-                        <h2>Descrição</h2>
-                        <p>Nossas camisas são 100% algodão em malha 30.1 penteada, gramatura de 180 gramas e gola canelada 2x1 com 3 cm de altura. E estampada em Silk DTG de ALTA qualidade.</p>
+                        <h2>Descrição:</h2>
+                        <p>{{ $produto->descricao}}</p>
                         <br>
                         <br>
                         <br>
@@ -120,5 +149,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 @endsection

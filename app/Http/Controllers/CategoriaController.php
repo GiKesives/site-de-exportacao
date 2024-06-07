@@ -8,25 +8,28 @@ use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        $categorias = Categoria::all();
-
-        return view('admin.categorias.index', ['categorias' => $categorias]);
-
-    }
-
+    
     public function create()
     {
         return view('admin.categorias.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
+    public function index()
+    {
+        $categorias = Categoria::all();
+
+        return view('admin.categorias.index', ['categorias' => $categorias]);
+    }
+
+
+     public function show($id)
+     {
+         $categoria = Categoria::findOrFail($id);
+         return view('admin.categorias.show', compact('categoria'));
+     }
+
+
     public function store(Request $request)
     {
 
@@ -36,36 +39,31 @@ class CategoriaController extends Controller
         'descricao_categoria'=>$request->descricao_categoria,
         ]);
 
-        return view('admin.categorias.create');
+        return back()->withSuccess('Cadastro realizado!');
 
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Categoria $categoria)
+
+    public function edit(Categoria $categoria)
     {
-        return view('app.categorias', $categoria);
+        return view('admin.categorias.edit', ['categoria' => $categoria]);
     }
 
-    public function edit()
-    {
-        return view('admin.categorias.edit');
-    }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Categoria $categoria)
     {
-        //
+        $categoria->update([
+            'nome_categoria'=>$request->nome_categoria,
+            'descricao_categoria'=>$request->descricao_categoria,
+        ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Categoria $categoria)
+
+    public function destroy($id)
     {
-        //
+        $categoria = Categoria::findOrFail($id); // Localize o produto pelo ID fornecido
+        $categoria->delete(); // Excluir o produto do banco de dados
+
+        return back()->withSuccess('Categoria excluída com sucesso');
     }
 }

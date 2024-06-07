@@ -9,7 +9,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\paineladminController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\ProdutoPageController;
 use App\Http\Controllers\SobreNosController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,23 +27,23 @@ Route::get('/faq', [FaqController::class, 'faqPage'])->name('faq');
 
 Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
-Route::get('/produtos', [ProdutoController::class, 'produtoPage'])->name('produto');
-
-Route::post('/produtos', [ProdutoController::class, 'store'])->name('produto');
-
-Route::get('/cadastro', [ProdutoController::class, 'cadastroPage'])->name('cadastro');
-
-Route::post('/cadastro', [ProdutoController::class, 'enviarFormProduto'])->name('cadastro.submit');
-
 Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->name('especifico');
 
-Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
-
-Route::get('/carrinho', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
+Route::get('/carrinho/{id}', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
 
 Route::resource('categorias', CategoriaController::class);
+
+Route::get('/produtoss', [ProdutoController::class, 'produtosPage'])->name('produtos.cliente');
+Route::get('/produto/{id}', [ProdutoController::class, 'especificoPage'])->name('produto.especifico');
+Route::resource('produtos', ProdutoController::class);
+
+Route::resource('users', UserController::class);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'homePage'])->name('home');
+
+Route::group(['middleware' => 'auth'], function () {
+Route::get('/admin', [App\Http\Controllers\PainelAdminController::class, 'index'])->name('admin.adm');
+});
 

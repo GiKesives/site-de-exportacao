@@ -16,20 +16,17 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
 
-        [   'name' => 'Gabriel',
-            'email' => 'gabriel@mail.com',
-            'password' => Hash::make(123456),
+        [   'name' => 'info',
+            'email' => 'info@mail.com',
+            'password' => Hash::make(123),
+        ], 
+
+        [   'name' => 'adm',
+            'email' => 'adm@mail.com',
+            'password' => Hash::make(12345),
         ], 
         ]);
 
-        // User::create([
-            
-        //         ['name' => 'Gabriel',
-        //         'email' => 'gabriel@mail.com',
-        //         'password' => Hash::make(1234),
-        //     ],
-        
-        // ]);
         // php artisan db:seed --class=UserSeeder
     }
 }
