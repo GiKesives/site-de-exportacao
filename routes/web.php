@@ -32,7 +32,6 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home');
 Route::get('/especificos', [EspecificoController::class, 'especificoPage'])->name('especifico');
 
 Route::get('/carrinho/{id}', [CarrinhoController::class, 'carrinhoPage'])->name('carrinho');
-Route::get('/perfil', [PerfilController::class, 'perfilPage'])->name('perfil');
 
 //Route::get('/compra', [PerfilController::class, 'formCompra'])->name('compra');
 
@@ -46,6 +45,8 @@ Route::get('/compra', [CompraController::class, 'compraPage'])->name('compra');
 
 Route::resource('categorias', CategoriaController::class);
 
+
+Route::get('/produtoss', [ProdutoController::class, 'produtosHomePage'])->name('produtos.home');
 Route::get('/produtoss', [ProdutoController::class, 'produtosPage'])->name('produtos.cliente');
 Route::get('/produto/{id}', [ProdutoController::class, 'especificoPage'])->name('produto.especifico');
 Route::resource('produtos', ProdutoController::class);

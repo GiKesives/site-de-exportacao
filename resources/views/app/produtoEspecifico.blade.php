@@ -6,50 +6,6 @@
 @endsection
 
 @section('body')
-<style>
-    .col-3 h2{
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .col-3 p{
-        font-size: 0.87rem;
-    }
-    .col-3 img{
-        height: 150px;
-        width: auto;
-    }
-    .col-4 img{
-        height: 320px;
-        width: auto;
-    }
-    .col-6 img{
-        height: 550px;
-        width: auto;
-    }
-    .row h1{
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .row h2{
-        font-size: 16px;
-        font-weight: bold;
-        text-align: left;
-    } 
-    .row h3{
-        font-size: 16px;
-        font-weight: bold;
-        text-align: left;
-    } 
-    .row h3{
-        font-size: 16px;
-        font-weight: bold;
-        text-align: left;
-    }
-    .row p{
-        font-size: 0.87rem;
-    }
-</style>
 
 {{-- <div class="container">
     <div class="row">
@@ -77,9 +33,6 @@
  <div class="container">
     <div class="row">
         <div class="col-3">
-            <img src={{ asset($produto->imagem) }} alt={{ $produto->nome}}/>
-            <br>
-            <br>
             <img src={{ asset($produto->imagem) }} alt={{ $produto->nome}}/>
         </div>
         <div class="col-6">
@@ -124,40 +77,56 @@
                 <br>
                 <br>
                 <div class="col-4">
-                    <a href="{{ route('especifico')}}">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                    </a>
-                    <br>
-                    <br>
-                    <h2>Camiseta ""</h2>
-                    <h2 >R$ Preço</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">Comprar</button>
+                    <main id="container">
+                        <!-- Seção de produtos -->
+                        <section class="product">
+                             {{-- @foreach($produtos as $produto) 
+                                <div class="productCard">
+                                    <div class="productCardImage">
+                                        <a href="{{ route('produto.especifico', $produto->id) }}">
+                                            <img src="{{ asset($produto->imagem) }}" alt="{{ $produto->nome }}" />
+                                             {{-- <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="{{ $produto->nome }}"> 
+                                         </a>
+                                    </div>
+                                    <div class="productInfo">
+                                        <h2>{{ $produto->nome }}</h2>
+                                        <hr />
+                                        <div class="item-price-container mb-2" data-store="product-item-price-{{ $produto->id }}">
+                                            <span class="js-compare-price-display price-compare" style="display:none;">
+                                                R$0,00
+                                            </span>
+                                            <span class="js-price-display item-price">
+                                                R$ {{ $produto->$preco }}
+                                            </span>                     
+                                        </div>
+                                        <a href="{{ route('produto.especifico', $produto->id) }}">
+                                            <button type="button" class="btn btn-secondary">Ver detalhes</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            @endforeach  --}}
+                        </section>
+                    </main> 
+                </div>
+                <div class="col-4">
+                    
                 </div>
                 <div class="col-4">
                     <a href="{{ route('especifico')}}">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
-                    </a>
-                    <br>
-                    <br>
-                    <h2>Camiseta ""</h2>
-                    <h2 >R$ Preço</h2>
-                    <hr />
-                    <button type="button" class="btn btn-secondary">Comprar</button>
-                </div>
-                <div class="col-4">
-                    <a href="{{ route('especifico')}}">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_816694-MLB54867165128_042023-O.webp" alt="Product One" />
+                    <img src="beyonce-frente-cinza.png" alt="Product One" />
                     </a>
                     <br>
                     <br>
                     <h2 >Camiseta ""</h2>
                     <h2 >R$ Preço</h2>
                     <hr>
+                    <a href="{{ route('produto.especifico', $produto->id) }}">
                     <button type="button" class="btn btn-secondary">Comprar</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    
 </div> 
 @endsection

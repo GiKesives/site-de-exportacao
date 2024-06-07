@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-    {{-- <main id="container">
+     <main id="container">
         <!-- Seção de produtos -->
         <section class="products">
             @foreach($produtos as $produto)
@@ -13,8 +13,8 @@
                     <div class="productCardImage">
                         <a href="{{ route('produto.especifico', $produto->id) }}">
                             <img src="{{ asset($produto->imagem) }}" alt="{{ $produto->nome }}" />
-                            {{-- <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="{{ $produto->nome }}"> --}}
-                        {{-- </a>
+                             {{-- <img src="{{ asset('assets/image/sza-frente-branca.png') }}" alt="{{ $produto->nome }}"> --}}
+                         </a>
                     </div>
                     <div class="productInfo">
                         <h2>{{ $produto->nome }}</h2>
@@ -34,9 +34,9 @@
                 </div>
             @endforeach
         </section>
-    </main> --}} 
+    </main> 
 
-     <main id="container">
+     {{-- <main id="container">
         <!-- video --> 
         <section>
                 <!-- Product --> 
@@ -328,6 +328,6 @@
                 </div>
             </div>
         </section>
-        
+         --}}
 @endsection 
 

@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 class ProdutoController extends Controller
 {
 
+    public function ProdutosHomePage()
+    {
+        $produtos = Produto::all();
+        return view('app.home', compact('produtos'));
+    }
+
     public function produtosPage()
     {
         $produtos = Produto::all();
