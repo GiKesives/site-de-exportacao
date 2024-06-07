@@ -19,7 +19,7 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-end">
-                            <a href="#" class="btn btn-secondary">Finalizar compra</a>
+                            <a href="{{ route('compra')}}" class="btn btn-secondary">Finalizar compra</a>
                             {{-- <a href="cancelar.carrinho" class="btn btn-secondary">Cancelar</a> --}}
                         </td>
                     </tr>
