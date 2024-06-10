@@ -327,4 +327,7 @@ form {
             <button type="submit" class="btn btn-secondary">Salvar Alterações</button>
         </div>
     </form>
+    </div>
+    <div class="col"></div>
+</div>
 @endsection

@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-<div class="row">
+{{-- <div class="row">
     <div class="col"></div>
     <div class="col">
         <form action="{{ route('finalizar.compra') }}" method="post" class="mt-4 mb-4">
@@ -68,6 +68,38 @@
 
             <button type="submit" class="btn btn-secondary">Finalizar Compra</button>
         </form>
+    </div>
+    <div class="col"></div>
+</div> --}}
+
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <form action="{{ route('finalizar.compra') }}" method="post" class="mt-4 mb-4">
+        @csrf
+        <div class="mb-3">
+            <label class="form-label">Nome Completo:</label>
+            <input type="name" name="nome" class="form-control" placeholder="Seu nome">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Telefone:</label>
+            <input type="tel" name="telefone" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">E-mail:</label>
+            <input type="email" name="email" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Metódo de Pagamento:</label>
+                <select name="subject" class="form-control">
+                    <option value="">Selecione uma opção</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+        </div>
+        <button type="submit" class="form-control btn btn-secondary">Finalizar Compra</button>
+    </form>
     </div>
     <div class="col"></div>
 </div>
