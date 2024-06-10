@@ -5,6 +5,9 @@
 @endsection
 
 @section('body')
+<style>
+ 
+</style>
 {{-- <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -50,24 +53,16 @@
     <div class="row text-center">
         <p>Bem vindo Adm!</p>
         <p>Aqui você pode gerenciar tudo sobre o seu site!</p>
-        <div class="col">
-            <a href="{{ route('produtos.create') }}" class="btn btn-primary">Cadastrar Produtos</a>
-            <br>
-            <br>
-            <a href="{{ route('categorias.create') }}" class="btn btn-primary">Cadastrar Categorias</a>
-            <br>
-            <br>
-        </div>
-        <div class="col">
-            <a href="{{ route('produtos.index') }}" class="btn btn-primary">Gerenciar Produtos</a>
-            <br>
-            <br>
-            <a href="{{ route('categorias.index') }}" class="btn btn-primary">Gerenciar Categorias</a>
-            <br>
-            <br>
-            <a href="{{ route('users.index') }}" class="btn btn-primary">Gerenciar Users</a>
+      
+        <div class="col d-flex justify-content-between">
+            <a href="{{ route('produtos.index') }}" class="btn btn-secondary mr-2">Gerenciar Produtos</a>
+            <a href="{{ route('categorias.index') }}" class="btn btn-secondary mr-2">Gerenciar Categorias</a>
+            <a href="{{ route('users.index') }}" class="btn btn-secondary mr-2">Gerenciar Users</a>
+            <a href="{{ route('produtos.create') }}" class="btn btn-secondary mr-2">Cadastrar Produtos</a>
+            <a href="{{ route('categorias.create') }}" class="btn btn-secondary">Cadastrar Categorias</a>
         </div>
     </div>
+    
 </div> 
 
 @endsection
