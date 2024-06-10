@@ -24,7 +24,12 @@ class ProdutoController extends Controller
     public function especificoPage($id)
     {
         $produto = Produto::findOrFail($id);
-        return view('app.produtoEspecifico', compact('produto'));
+
+        $produtosRelacionados = Produto::where('id', '!=', $produto->id)
+                                   ->take(3)
+                                   ->get();
+
+        return view('app.produtoEspecifico', compact('produto', 'produtosRelacionados'));
     }
 
     public function create()
