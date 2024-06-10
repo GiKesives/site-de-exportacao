@@ -419,27 +419,23 @@ footer {
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-12">
+    <div class="container">
+        <div class="row">
             <h2>Produtos Relacionados</h2>
         </div>
-        <div class="col-md-4">
-            <div class="productCard">
-                <div class="productCardFlag">
-                    <span>Mais vendido</span>
-                </div>
-                <div class="productCardImage">
-                    <a href="{{ route('produto.especifico', $produto->id) }}">
-                        <img src="{{ asset($produto->imagem) }}" alt="{{ $produto->nome }}" />
+        <div class="row">
+            @foreach($produtosRelacionados as $produtoRelacionado)
+            <div class="col-md-4">
+                <div class="related-product">
+                    <img src="{{ asset($produtoRelacionado->imagem) }}" alt="{{ $produtoRelacionado->nome }}" />
+                    <h3>{{ $produtoRelacionado->nome }}</h3>
+                    <p>R$ {{ $produtoRelacionado->preco }}</p>
+                    <a href="{{ route('produto.especifico', $produtoRelacionado->id) }}">
+                        <button type="button" class="btn btn-secondary">Ver detalhes</button>
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <!-- Produto relacionado 2 -->
-        </div>
-        <div class="col-md-4">
-            <!-- Produto relacionado 3 -->
+            @endforeach
         </div>
     </div>
 </div>
