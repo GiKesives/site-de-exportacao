@@ -397,23 +397,25 @@
             <table class="table table-bordered table-striped" style="background-color: black; color: white;">
                 <thead>
                     <tr>
-                        <th>Imagem</th>
                         <th>Nome</th>
+                        <th>Cor</th>
                         <th>Preço</th>
+                        <th>Tamanho</th>
                         <th>Total a Pagar</th>                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="width: 150px;"><img src="{{ $produto->imagem }}" style="max-width: 100%; height: auto;" /></td>
                         <td>{{ $produto->nome }}</td>
+                        <td>{{ $produto->cor }}</td>
                         <td>R$ {{ $produto->preco }}</td>
+                        <td>{{ $produto->tamanho }}</td>
                         <td>R$ {{ $produto->preco }}</td>                        
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4" class="text-end">
+                        <td colspan="5" class="text-end">
                             <a href="{{ route('compra')}}" class="btn btn-secondary">Finalizar compra</a>
                             {{-- <a href="cancelar.carrinho" class="btn btn-secondary">Cancelar</a> --}}
                         </td>

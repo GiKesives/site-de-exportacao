@@ -312,6 +312,11 @@ form {
             <label for="cor">Cor:</label>
             <input type="text" id="cor" name="cor" value="{{ $produto->cor }}" class="form-control">
         </div>
+
+        <div class="form-group">
+            <label for="tamanho">Tamanho:</label>
+            <input type="text" id="tamanho" name="tamanho" value="{{ $produto->tamanho }}" class="form-control">
+        </div>
     
         <div class="form-group">
             <label for="descricao">Descrição:</label>
